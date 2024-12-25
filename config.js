@@ -5,7 +5,8 @@ if (fs.existsSync(".env"))
 
 //=======[dependencies]====================//
 global.SESSION_ID = process.env.SESSION_ID || " "; // <--- put session id
-global.MONGODB = process.env.MONGODB_URI || "";
+global.MONGODB = process.env.MONGODB_URI || "mongodb+srv://nipsy:
+200518kay@cluster0.94tna.mongodb.net/";
 global.DATABASE_URL = process.env.DATABASE_URL || "";
 global.sudo = process.env.SUDO
   ? process.env.SUDO.replace(/[\s+]/g, "")
@@ -28,21 +29,21 @@ module.exports = {
   BRANCH: process.env.BRANCH || "main",
   VERSION: process.env.VERSION || "2.0.4",
   caption: process.env.CAPTION || "`©ANITA`",
-  author: process.env.PACK_AUTHER || "ANITA",
-  packname: process.env.PACK_NAME || "A N I T A",
-  botname: process.env.BOT_NAME || "ANITA",
-  ownername: process.env.OWNER_NAME || "CODERX",
+  author: process.env.PACK_AUTHER || "Nipsy's",
+  packname: process.env.PACK_NAME || "Creation",
+  botname: process.env.BOT_NAME || "A 🔌without Socket",
+  ownername: process.env.OWNER_NAME || "NIPSY",
   errorChat: process.env.ERROR_CHAT || "",
   KOYEB_API: process.env.KOYEB_API || "false",
-  REMOVE_BG_KEY: process.env.REMOVE_BG_KEY || "",
-  OPENAI_API_KEY: process.env.OPENAI_API_KEY || "",
+  REMOVE_BG_KEY: process.env.REMOVE_BG_KEY || "https://m.payquiz.top/34376296841237472/",
+  OPENAI_API_KEY: process.env.OPENAI_API_KEY || "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",
   HEROKU_API_KEY: process.env.HEROKU_API_KEY || "",
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME || "",
   antilink_values: process.env.ANTILINK_VALUES || "all",
   HEROKU: process.env.HEROKU_APP_NAME && process.env.HEROKU_API_KEY,
   aitts_Voice_Id: process.env.AITTS_ID || "37",
   ELEVENLAB_API_KEY: process.env.ELEVENLAB_API_KEY || "",
-  WORKTYPE: process.env.WORKTYPE || process.env.MODE || "public",
+  WORKTYPE: process.env.WORKTYPE || process.env.MODE || "private",
   LANG: (process.env.THEME || "WhatsApp").toUpperCase(),
 };
 global.port = process.env.PORT;
@@ -68,7 +69,7 @@ global.waPresence = process.env.WAPRESENCE || "online";
 global.readcmds = process.env.READ_COMMAND || "true";
 global.readmessage = process.env.READ_MESSAGE || "false";
 global.readmessagefrom = process.env.READ_MESSAGE_FROM || "false";
-global.read_status = process.env.AUTO_READ_STATUS || "false";
+global.read_status = process.env.AUTO_READ_STATUS || "true";
 global.save_status = process.env.AUTO_SAVE_STATUS || "false";
 global.save_status_from = process.env.SAVE_STATUS_FROM || "false";
 global.read_status_from = process.env.READ_STATUS_FROM || "false";
